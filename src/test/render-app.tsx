@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, type screen as Screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { RouterProvider } from "react-router-dom";
 import { configureApp } from "@/app/configure";
@@ -25,7 +25,7 @@ export function renderApp(path = "/") {
 
 export async function signIn(
   user: ReturnType<typeof userEvent.setup>,
-  screen: typeof import("@testing-library/react").screen,
+  screen: typeof Screen,
   email: string,
 ) {
   await user.type(await screen.findByRole("textbox", { name: /email/i }), email);
