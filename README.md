@@ -1,5 +1,7 @@
 # enterprise-react-app
 
+[![CI](https://github.com/smrafi4130/enterprise-react-app/actions/workflows/ci.yml/badge.svg)](https://github.com/smrafi4130/enterprise-react-app/actions/workflows/ci.yml)
+
 A feature-based React 18 + TypeScript reference application: an internal project/issue tracker with role-based access, server-state synchronisation, a typed API layer and three test layers.
 It consumes the [`@smrafi/ui`](https://github.com/smrafi4130/react-design-system) design system.
 
